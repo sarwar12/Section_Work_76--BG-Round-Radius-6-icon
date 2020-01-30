@@ -1,0 +1,106 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: ;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:hover{
+	text-decoration: none;
+}
+/* Main CSS Stop */
+/* Round Radius Section Start */
+.round-bg:after{
+	background-image: url(../img/bg.jpg);
+}
+.section-padding.round-bg {
+  position: relative;
+  z-index: 1;
+}
+.section-padding.round-bg:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 450px;
+  width: 450px;
+  z-index: -1;
+  border-radius: 50%;
+  margin-left: -225px;
+  margin-top: -225px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+}
+.single-feature-item {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  padding-right: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*margin-left: 50px;*/
+  margin-right: 20px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+.feature-icon {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 50px;
+  top: 0;
+  transition: .3s;
+}
+.feature-icon i {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  line-height: 120px;
+}
+.single-feature-item h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.section-padding {
+  padding: 80px 0;
+}
+.left-icon .feature-icon {
+  left: 0;
+  right: auto;
+}
+.single-feature-item.left-icon {
+  margin-left: 0;
+  padding-left: 170px;
+  padding-right: 0;
+  margin-right: 20px;
+  text-align: left;
+}
+.single-feature-item.feature-padding-left {
+  margin-left: 0;
+  margin-right: 119px;
+}
+.single-feature-item.left-icon.feature-padding-right {
+  margin-right: 0;
+  margin-left: 120px;
+}
+.single-feature-item:hover .feature-icon {
+  box-shadow: -2px 7px 10px #333;
+}
+/* Round Radius Section Stop */
